@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/*--------ESTILOS DEL BODY-------*/
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url(../images/fondo.jpg) center/cover no-repeat fixed;
+
+}
+
+/*--------ESTILOS DEL HEADER (logo y titulo)-------*/
+
+header{
+    display: flex;
+    height: 120px;
+    background-color: rgba(74, 74, 74, 0.8);
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.img-logo{
+    height: 200px;
+    width: 200px;
+}
+h1{
+    color: #731013;
+}
+
+/*--------ESTILOS DE LOS LINKS Y SU DIV-------*/
+
+
+.link-box{
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 50px;
+    background-color:  #73101386;
+    text-align: center;
+    justify-content:center ;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+.nav-links{
+    display: flex;
+    padding-top: 10px;
+    margin: 0 20px;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    margin: 0 10px;
+    list-style: none;
+    text-decoration: NONE;
+    font-weight: bold;
+    color: rgb(223, 222, 222);
+}
+.nav-links a:hover{
+    color: #731013;
+    background-color: gray;
+}
+.nav-links .active{
+    color: black
+}
+
+/*------------ESTILOS SECCIONES CON CONTENIDO--------*/
+section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section h2{
+    margin: 40px 0;
+    color: white;
+    background-color: #731013;
+    text-align: center;
+}
+
+.contenedor{
+    width: 60%;
+    max-width: 800px;
+}
+.contenedor-xl{
+    width: 80%;
+    max-width: 1200px;
+}
+
+/*----------SECCION COMO COMENZÓ-------*/
+.contenedor-img-txt{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.contenedor-img-txt img{
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.cuadro-txt{
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-left: -80px;
+    transition: all 0.5s ease-in-out;
+}
+
+.cuadro-txt h3{
+    margin-bottom: 20px;
+}
+.contenedor-img-txt:hover .cuadro-txt{
+    transform: translate(-30px);
+}
+
+/*---------SECCION HIHGLIGHTS--------*/
+.contenido-img{
+
+    background-color: rgba(74, 74, 74, 0.9);
+}
+
+.top-ventas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    gap: 10px;
+
+}
+.top-venta{
+    height: 350px;
+    text-align: center;
+    color: white;
+}
+
+.price{
+    color: rgb(125, 2, 2);
+}
+.jordan{
+    height: 250px;
+    width: 300px;
+}
+.air-max{
+    height: 250px;
+    width: 300px;
+}
+
+/*----------SECCION ULTIMAS NOTICIAS--------*/
+.contenido-noticias{
+    margin: 0 0 100px 0;
+    background-color: #731013d4;
+}
+.contenido-noticias h2{
+    background-color: rgb(74, 74, 74);
+}
+
+.articulo{
+    margin: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.942);
+    border: 1px solid rgb(74, 74, 74);
+    padding: 20px;
+}
+
+
+/*********************************************************************************
+***********************   PRESUPUESTO  ******************************************
+***********************************************************************************/
+.fondo-formulario{
+    background-color: rgba(255, 255, 255, 0.836);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.fondo-formulario p{
+    text-align: center;
+}
+.formulario{
+    list-style: none;
+    font-weight: bold;
+}
+.formulario li{
+    margin: 30px 10px;
+    display: grid;
+}
+ul li label:hover{
+    background-color: #73101366;
+}
+ul>.condiciones{
+    display: flex;
+    gap: 10px;
+}
+
+ul li input[type="submit"]{
+    font-weight: bold;
+    background-color: #731013;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+ul li input[type="submit"]:hover{
+    background-color: rgb(74, 74, 74);
+}
+
+/*********************************************************************************
+***********************   CONTACTO  ******************************************
+***********************************************************************************/
+.contacto{
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(74, 74, 74, 0.8);
+    gap: 30px;
+    color: white;
+    font-weight: bold;
+}
+.contacto h2{
+    padding: 10px;
+}
+.contacto ul li{
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.534);
+}
+.contacto img{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+/*********************************************************************************
+***********************   GALERIA  ******************************************
+***********************************************************************************/
+.galeria{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 400px 10px;
+    gap: 70px;
+}
+.galeria p{
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 70%;
+    background-color: #731013;
+}
+
+.transicion{
+    transition: transformar .3s ease-in-out;
+}
+
+.transicion:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/*-------------FOOTER----------*/
+footer{
+    background-color: rgb(74, 74, 74);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+/*----FOOTER redes sociales*/
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.red-social{
+    padding: 10px;
+}
+.red-social a{
+    text-decoration: none;
+}
+.logo-red{
+    display: flex;
+    height: 50px;
+    width: 50px;
+}

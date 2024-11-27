@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Trabajo final HTML/CSS">
+    <meta name="author" content="Raul Gómez García">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LINK HOJA DE ESTILOS-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--ICONO PAGINA WEB-->
+    <link rel="shortcut icon" href="../icono.ico" type="image/x-icon">
+    <title>SNEAKERSHEAD</title>
+    
+</head>
+<body>
+    <!--CABECERA Y BARRA DE NAVEGACIÓN-->
+    <header>
+        <img src="../images/logo-nike.png" alt="logo de empresa" class="img-logo" title="logo de empresa" width="512" height="512">
+        <h1 class="titulo">SneakerShoot</h1>
+    </header>
+    <div class="link-box">
+        <ul class="nav-links">
+            <li>
+                <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="./contacto.html">Contacto</a>
+            </li>
+            <li>
+                <a href="#" class="active">Compramos</a>
+            </li>
+            <li>
+                <a href="./productos.html">Productos</a>
+            </li>
+        </ul>
+    </div>
+
+    <!--CUERPO DE LA PAGINA-->
+    <main>
+        <section>
+            <h2>¡¡Compramos tus zapatillas!!</h2>
+            <div class="contenedor-xl">
+                <form action="#" class="fondo-formulario">
+                    <p>¡Pon tus datos de contacto, el modelo y color de la zapatilla y nos pondremos en contacto para darte un presupuesto!</p>
+                    <ul class="formulario">
+                        <li>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Escribe tu  correo electrónico">
+                        </li>
+                        <li>
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" name="telefono" id="telefono" placeholder="Escriba su Num. Telefónico">
+                        </li>
+                        <li>
+                            <label for="modelo">Descripcion Sneaker</label>
+                            <textarea name="modelo" id="modelo" rows="6" cols="40" placeholder="Dinos modelo y color de la zapatilla"></textarea>
+                        </li>
+                        <li class="condiciones">
+                            <input type="checkbox" name="condiciones" id="condiciones">
+                            <label for="condiciones">Aceptar Terminos y Condiciones de datos</label>
+                        </li>
+                        <li>
+                            <input type="submit" value="Enviar">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <!--PIE DE LA PAGINA-->
+    <footer>
+        <div class="redes-sociales">
+            <h3>Redes sociales:</h3>
+            <div class="red-social"> 
+                <a href="#"><img src="../images/insta.png" alt="logo instagram" width="100" height="100" class="logo-red"></a>
+            </div>
+            <div class="red-social">
+                <a href="#"><img src="../images/facebook.png" alt="logo facebook" width="100" height="100" class="logo-red"></a>
+            </div>
+            <div class="red-social">
+                <a href="#"><img src="../images/twiter.png" alt="Twitter" width="100" height="100" class="logo-red"></a>
+                
+            </div>
+        </div>
+        <p>&copy; Todos los derechos reservados</p>
+    </footer>
+    <script src="../js/#"></script>
+</body>
+</html>
